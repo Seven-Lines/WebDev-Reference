@@ -1,2 +1,2 @@
-# WebDev-Reference
-A compilation of simple HTML, CSS, and JavaScript code. 
+###### Web Development References 
+This is a repository full of code snippets for certain UI designs. As you go farther down each directory the result becomes more advanced.
