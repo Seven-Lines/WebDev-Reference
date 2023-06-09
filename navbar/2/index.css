@@ -24,10 +24,6 @@ body {
     filter: blur(0.5)
 }
 
-.navbar > p { 
-
-}
-
 .navbar > ul { 
 
     list-style-type: none;
