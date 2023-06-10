@@ -75,13 +75,3 @@ body {
 .header { 
 
 }
-
-#header-L { 
-    background: var(--c-bg-blue);
-    width: 50%;
-}
-
-#header-R { 
-    background: var(--c-bg-red);
-    width: 50%
-}
