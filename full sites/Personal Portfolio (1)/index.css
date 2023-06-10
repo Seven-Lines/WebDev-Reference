@@ -3,6 +3,7 @@
     /* COLORS */
     --c-void: #0E0B16; 
     --c-darkervoid: #020105b7;
+    --c-lightervoid: #140f22b7;
     --c-fushia: #A239CA; 
     --c-jewel: #4717F6; 
     --c-stark: #E7DFFD; 
@@ -17,6 +18,7 @@
     -webkit-text-fill-color: transparent;
 }
 
+.def-pos { margin: 0px; padding: 0px; }
 /* MAIN --------------------------------------------------------------------*/
 body { 
     background: var(--c-void);
@@ -73,5 +75,38 @@ body {
 
 /* HEADER --------------------------------------------------------------------*/
 .header { 
+    margin: 10% 10% 0% 10%;
+}
 
+.header > .container { 
+    height: 50vw;
+}
+
+.header-text { 
+    padding-top: 50px;
+}
+
+.header-subtext { 
+    color: var(--c-stark-trans);
+    font-size: 9px;
+}
+
+#header-hello { font-size: 50px; }
+#header-content { width: 40vw; } 
+#profile-img { position: absolute; left: 45%; height: 50vw; } 
+
+/* ABOUT --------------------------------------------------------------------*/
+
+.about { 
+    background: var(--c-lightervoid)
+}
+
+.about-thing { 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0% 25% 0% 25%;
+}
+
+.about-thing { 
+    text-align: center;
 }
