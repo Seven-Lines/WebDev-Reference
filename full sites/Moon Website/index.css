@@ -1,0 +1,59 @@
+/* VARIABLES --------------------------------------------------------------------*/
+:root { 
+    /* COLORS */
+    --c-hpink: #FF014A; 
+    --c-darkblue: #030012;
+    --c-white: #F1EDFF;
+}
+
+.roboto { font-family: Roboto; font-size: 15px; }
+
+.white { color: var(--c-white) }
+
+
+/* MAIN --------------------------------------------------------------------*/
+body { 
+    background: var(--c-darkblue);
+    margin: 0px; 
+    padding: 0px;
+}
+
+.navbar { 
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.navbar > ul { 
+    list-style-type: none;
+    display: flex; 
+    flex-direction: row;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.header { 
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    padding-top:50px
+}
+
+.masthead { 
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    background: linear-gradient(to bottom, rgba(3, 0, 18, 0.7) 0%, rgba(3, 0, 18, 0.7) 75%, var(--c-darkblue) 100%), url("assets/Masthead.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
