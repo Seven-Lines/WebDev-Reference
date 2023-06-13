@@ -19,13 +19,15 @@ body {
 }
 
 .navbar { 
-    position: absolute;
+    --navbar-padding-y: 1rem;
+    --navbar-padding-x: 3rem; 
+
+    position: relative;
     z-index: 1;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: var(--navbar-padding-y) var(--navbar-padding-x);
 }
 
 .navbar > ul { 
@@ -45,11 +47,16 @@ body {
     padding-top:50px
 }
 
+#moon-graphic { position: absolute; bottom: 10px; left: 10%; height: 30vw; } 
+#text1 { }
+
 .masthead { 
-    position: relative;
+    position: absolute; 
+    top: 0px;
     width: 100%;
     height: auto;
     min-height: 35rem;
+
     background: linear-gradient(to bottom, rgba(3, 0, 18, 0.7) 0%, rgba(3, 0, 18, 0.7) 75%, var(--c-darkblue) 100%), url("assets/Masthead.png");
     background-position: center;
     background-repeat: no-repeat;
