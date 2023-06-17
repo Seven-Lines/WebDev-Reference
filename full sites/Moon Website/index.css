@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+
 /* VARIABLES --------------------------------------------------------------------*/
 :root { 
     /* COLORS */
@@ -7,7 +10,8 @@
     --c-white: #F1EDFF;
 }
 
-.roboto { font-family: Roboto; font-size: 15px; }
+.roboto { font-family: Roboto; font-size: 15px; font-weight: 900; }
+.roboto-thin { font-family: Roboto; font-size: 15px; font-weight: 400; }
 
 .white { color: var(--c-white) }
 
@@ -19,12 +23,12 @@ body {
 }
 
 .red-button { background-color: var(--c-hpink); color: var(--c-white); border: none; border-radius: 5px;} 
-.red-button:hover { background-color: var(--c-dpink); transition: 0.5s}
+.red-button:hover { background-color: var(--c-dpink); transition: 0.5s; cursor: pointer}
 
 /* NAVBAR --------------------------------------------------------------------*/
 .navbar { 
     position: relative;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
