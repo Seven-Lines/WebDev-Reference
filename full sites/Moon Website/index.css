@@ -1,7 +1,8 @@
 /* VARIABLES --------------------------------------------------------------------*/
 :root { 
     /* COLORS */
-    --c-hpink: #FF014A; 
+    --c-hpink: #FF014A;
+    --c-dpink: #ff01499f; 
     --c-darkblue: #030012;
     --c-white: #F1EDFF;
 }
@@ -10,7 +11,6 @@
 
 .white { color: var(--c-white) }
 
-
 /* MAIN --------------------------------------------------------------------*/
 body { 
     background: var(--c-darkblue);
@@ -18,16 +18,17 @@ body {
     padding: 0px;
 }
 
-.navbar { 
-    --navbar-padding-y: 1rem;
-    --navbar-padding-x: 3rem; 
+.red-button { background-color: var(--c-hpink); color: var(--c-white); border: none; border-radius: 5px;} 
+.red-button:hover { background-color: var(--c-dpink); transition: 0.5s}
 
+/* NAVBAR --------------------------------------------------------------------*/
+.navbar { 
     position: relative;
     z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--navbar-padding-y) var(--navbar-padding-x);
+    margin: 1rem 3rem;
 }
 
 .navbar > ul { 
@@ -38,20 +39,9 @@ body {
     gap: 2.5rem;
 }
 
-.header { 
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 10%;
-    margin-left: 10%;
-
-    padding-top:50px
-}
-
-#moon-graphic { position: absolute; bottom: 10px; left: 10%; height: 30vw; } 
-#text1 { }
-
-.masthead { 
-    position: absolute; 
+/* HEADER --------------------------------------------------------------------*/
+.header-background { 
+    position: absolute;
     top: 0px;
     width: 100%;
     height: auto;
@@ -63,4 +53,27 @@ body {
     background-attachment: scroll;
     background-size: cover;
 }
+
+.header-positioning { 
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    padding-top: 75px;
+
+    display: flex;
+}
+
+.header-left { 
+    margin: 10px;
+}
+
+.header-right { 
+    margin: 10px;
+}
+
+#moon-graphic { bottom: 10px; left: 10%; height: 30vw; } 
+
+
 
